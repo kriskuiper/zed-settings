@@ -7,46 +7,78 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "restore_on_startup": "launchpad",
+  "cursor_shape": "bar",
+  "terminal": {
+    "font_size": 14.0,
+    "font_family": "FiraCode Nerd Font Mono"
+  },
+  "relative_line_numbers": "enabled",
   "tabs": {
-    "file_icons": true
+    "file_icons": true,
   },
   "title_bar": {
-    "show_branch_icon": true
+    "show_branch_icon": true,
   },
   "icon_theme": "Zed (Default)",
   "buffer_font_weight": 400.0,
   "git_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "agent": {
     "dock": "left",
-    "model_parameters": []
+    "model_parameters": [],
   },
   "project_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "base_keymap": "VSCode",
-  "theme": "VSCode Dark Modern",
+  "theme": "Vitesse Dark",
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "format_on_save": "off",
   "vim_mode": true,
   "ui_font_size": 15,
   "buffer_font_size": 14.0,
-  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_family": "DM Mono",
   "buffer_line_height": {
-    "custom": 1.6
+    "custom": 1.8,
   },
   "toolbar": {
     "breadcrumbs": true,
     "quick_actions": false,
-    "selections_menu": false
+    "selections_menu": false,
   },
   "languages": {
     "PHP": {
-      "language_servers": ["intelephense", "!phpactor", "..."]
-    }
-  }
+      "language_servers": ["intelephense", "!phpactor", "..."],
+    },
+    "TypeScript": {
+      "language_servers": ["typescript-language-server", "!vtsls", "..."],
+    },
+    "TSX": {
+      "language_servers": ["typescript-language-server", "!vtsls", "..."],
+    },
+    "JavaScript": {
+      "language_servers": ["typescript-language-server", "!vtsls", "..."],
+    },
+  },
+  "lsp": {
+    "typescript-language-server": {
+      "initialization_options": {
+        "preferences": {
+          "includeInlayParameterNameHints": "all",
+          "includeInlayParameterNameHintsWhenArgumentMatchesName": true,
+          "includeInlayFunctionParameterTypeHints": true,
+          "includeInlayVariableTypeHints": true,
+          "includeInlayVariableTypeHintsWhenTypeMatchesName": true,
+          "includeInlayPropertyDeclarationTypeHints": true,
+          "includeInlayFunctionLikeReturnTypeHints": true,
+          "includeInlayEnumMemberValueHints": true,
+        },
+      },
+    },
+  },
 }
